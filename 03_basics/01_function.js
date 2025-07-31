@@ -34,4 +34,30 @@ if(username=== undefined){                   // ! is equal to not equal
 return `${username} just login in`
 }
                                                
-console.log(loginUserMessage()); // value not determined undefined
+// console.log(loginUserMessage()); // value not determined undefined
+
+function calculateChartPrice(val1,val2,...num1){   // rest operator
+    return num1
+}
+// console.log(calculateChartPrice(200,300,599));
+
+ // combine of object & function
+const user ={
+    username : "nikhil",
+    price :200
+}
+
+function handlePrice(anyObject){                                                      
+    console.log(`username is ${anyObject.username} and price is ${anyObject.price}`);
+    
+}
+handlePrice(user)
+
+// conbine array to function
+
+let myNewArr =[200,399,499,700]
+ 
+function returnArry(getArry){
+    return getArry[0]
+}
+console.log(returnArry([200,399,499,700]));
