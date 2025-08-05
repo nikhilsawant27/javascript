@@ -25,15 +25,15 @@
 // }                 /// this is not working in arrow function
 // chai()
 
- const addTwo = (num1,num2) => {
-    return num1+num2
- }
+//  const addTwo = (num1,num2) => {
+//     return num1+num2
+//  }
 
- console.log(addTwo(2,4));
+//  console.log(addTwo(2,4));
 
- const addTwo = (num1,num2) => num1+num2
+//  const addTwo = (num1,num2) => num1+num2
  
 
- console.log(addTwo(2,4));
+//  console.log(addTwo(2,4));
 
- const addTwo = (num1,num2) => ({num1+num2})  // object to write in arrow function
+//  const addTwo = (num1,num2) => ({num1+num2})  // object to write in arrow function
