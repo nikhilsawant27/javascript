@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body>
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+
+</body>
+<script>
+    function addLanguage(lang){
+        const li=document.createElement('li');
+        li.innerHTML=`${lang}`
+        document.querySelector(`.language`).
+        appendChild(li)
+        
+    }
+    addLanguage("python")
+    addLanguage("java")
+
+
+    function addOptiLang(taj){
+      const li = document.createElement('li');
+      li.appendChild(document.createTextNode(taj))
+      document.querySelector('.language').appendChild(li)
+    }
+    addOptiLang('golang')
+
+    // edit
+
+            const oldText =document.querySelector("li:nth-child(3)")
+           const NewText= document.createElement('li')
+        //    NewText.textContent="nikhil"
+           NewText.innerHTML="nikhil"
+           oldText.replaceWith(NewText)
+    // edit
+
+    const change = document.querySelector('li:first-child')
+    change.outerHTML='<li>css</li>'
+
+    // remove
+
+   const deletelast = document.querySelector('li:nth-child(3)')
+   deletelast.remove()
+
+
+</script>
+</html>
