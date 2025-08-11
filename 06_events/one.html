@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    // type , timestamp, defaultPrevented, target, toElement, srcElement, target, toElement, srcElement
+    // curentTarget , clientX,clientY, screenX,screenY
+    // altKey , cltrKey, ShiftKey,KeyCode
+</body>
+<script>
+    document.getElementById('orl').addEventListener('click',function(e){
+        alert("hello world")
+        e.stopPropagation()
+        e.preventDefault()
+    },false)
+    document.getElementById('orl').addEventListener('click',function(){
+        alert("hello world")
+
+    },false)
+
+    document.querySelector('#image').addEventListener('click',function(e){
+        console.log(e.target.parentNode);
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+        
+    })
+
+    removeIt.parentNode.removeChild(removeIt)
+    
+    
+</script>
+</html>
